@@ -1,6 +1,7 @@
 __pycache__
 .vscode
 venv
+test-reports
 *.egg-info
 flask_web
 *pyc
