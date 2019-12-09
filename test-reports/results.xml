@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="0" hostname="navaneek02-PC" name="pytest" skipped="0" tests="1" time="1.717" timestamp="2019-12-09T19:48:50.527984"><testcase classname="" file="" name="" time="0.000"><error message="collection failure">venv\lib\site-packages\py\_error.py:66: in checked_call
+    return func(*args, **kwargs)
+E   PermissionError: [WinError 5] Access is denied: &apos;C:\\Users\\navaneek\\Desktop\\jenkins\\jenkins_docker_proj\\flask_web\\app\\tests&apos;
+
+During handling of the above exception, another exception occurred:
+venv\lib\site-packages\py\_path\common.py:377: in visit
+    for x in Visitor(fil, rec, ignore, bf, sort).gen(self):
+venv\lib\site-packages\py\_path\common.py:429: in gen
+    for p in self.gen(subdir):
+venv\lib\site-packages\py\_path\common.py:429: in gen
+    for p in self.gen(subdir):
+venv\lib\site-packages\py\_path\common.py:429: in gen
+    for p in self.gen(subdir):
+venv\lib\site-packages\py\_path\common.py:414: in gen
+    entries = path.listdir()
+venv\lib\site-packages\py\_path\local.py:392: in listdir
+    names = py.error.checked_call(os.listdir, self.strpath)
+venv\lib\site-packages\py\_error.py:86: in checked_call
+    raise cls(&quot;%s%r&quot; % (func.__name__, args))
+E   py.error.EBUSY: [Resource device]: listdir(&apos;C:\\Users\\navaneek\\Desktop\\jenkins\\jenkins_docker_proj\\flask_web\\app\\tests&apos;,)</error></testcase></testsuite></testsuites>

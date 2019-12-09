@@ -1,0 +1,9 @@
+version: '2'
+services:
+     jenkins_test:
+        build:
+           context: .
+           dockerfile: dockerfile
+        volumes:
+          - ".:/usr/src/app"
+        command: ["./entry_point.sh"]
