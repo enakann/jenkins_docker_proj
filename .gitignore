@@ -4,4 +4,6 @@ venv
 *.egg-info
 flask_web
 *pyc
-test_reports
+test-reports/*xml
+test-reports/
+test-reports/results.xml
