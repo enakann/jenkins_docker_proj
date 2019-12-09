@@ -6,4 +6,5 @@ services:
            dockerfile: Dockerfile
         volumes:
           - "./app:/app"
+          - "./test_reports:/test_reports"
         command: ["sh", "entry_point.sh"]
