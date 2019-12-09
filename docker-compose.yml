@@ -3,7 +3,7 @@ services:
      jenkins_test:
         build:
            context: .
-           dockerfile: dockerfile
+           dockerfile: Dockerfile
         volumes:
-          - ".:/usr/src/app"
-        command: ["./entry_point.sh"]
+          - "./app:/app"
+        command: ["sh", "entry_point.sh"]

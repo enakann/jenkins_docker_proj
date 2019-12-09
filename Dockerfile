@@ -1,4 +1,6 @@
-FROM python-3:alpine
+FROM python:3.7-alpine
+WORKDIR /
 COPY requirements.txt .
+COPY setup.py .
 RUN pip install -r requirements.txt
-CMD ['./entry_point.sh']
+COPY entry_point.sh .

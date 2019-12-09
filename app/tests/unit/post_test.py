@@ -11,6 +11,8 @@ class PostTest(unittest.TestCase):
         p = Post('Test', 'Test content')
 
         self.assertDictEqual({'title': p.title, 'content': p.content}, p.json())
+    def test_fail(self):
+        self.assertEqual(1,2) 
 
 
 if __name__ == '__main__':
