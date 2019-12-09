@@ -1,2 +1,2 @@
 pip install -e .
-py.test --verbose --junit-xml test-reports/results.xml /app/tests
+py.test --verbose --junit-xml testreports/results.xml /app/tests
