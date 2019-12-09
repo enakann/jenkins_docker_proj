@@ -8,6 +8,11 @@ pipeline {
 					sh './run_tests.sh'
 				}
 			}
+			post {
+                always {
+                    junit 'test-reports/results.xml'
+                }
 		}
 	}
+}
 }
