@@ -10,9 +10,7 @@ pipeline {
 			}
 			post {
                 always {
-					 sh 'ln -s ./testreports/results.xml $WORKSPACE'
-                    junit 'results.xml'
-					
+                    junit 'results.xml'		
                 }
 		}
 	}
